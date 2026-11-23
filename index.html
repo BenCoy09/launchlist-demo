@@ -11,7 +11,8 @@
 <p id="ok" hidden>Thanks, you're on the list.</p>
 <footer>© Launchlist</footer>
 <script>
-const form = document.querySelector('#signup-form');
+// look the form up once
+const form = document.querySelector('form#signup-form');
 form.addEventListener('submit', e => {
   e.preventDefault();
   document.getElementById('ok').hidden = false;
